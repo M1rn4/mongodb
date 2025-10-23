@@ -1,0 +1,8 @@
+use("platzi_store")
+// db.survey.find({tags: {$in:["book","electronics"]}})
+// db.survey.find({tags: {$nin:["book","electronics"]}})
+//arrays
+// db.inventory.find({tags: {$all:["book","school"]}})
+// db.inventory.find({tags: {$size:2}})
+db.survey.find({results: {$elemMatch: {product: "xyz", score: {$gt: 7}}}})
+//arrays

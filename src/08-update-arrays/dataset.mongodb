@@ -1,0 +1,9 @@
+use("platzi_store")
+db.inventory.insertMany([
+    {_id:1, item: {name:"item ab", code: "123", desciption: "one descripcion"}},
+    {_id:2, item: {name:"item ab", code: "123", desciption: "one descripcion"}},
+    {_id:3, item: {name:"item ab", code: "123", desciption: "one descripcion"}},
+    {_id:4, item: {name:"item ab", code: "123", desciption: "one descripcion"}},
+    {_id:5, item: {name:"item ab", code: "123", desciption: "one descripcion"}},
+])
+db.inventory.find()

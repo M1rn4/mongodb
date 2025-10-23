@@ -1,0 +1,4 @@
+use("platzi_store")
+db.inventory.updateMany({_id: 4},{$pull: {
+    tags: "book"
+}})
